@@ -5,12 +5,16 @@
       "@semantic-release/commit-analyzer",
       {
         "releaseRules": [
-          { "type": "major", "release": "major" },
-          { "type": "feat", "release": "minor" },
-          { "type": "fix", "release": "patch" },
+          { "type": "major", "scope": "repo", "release": "major" },
+          { "breaking": true, "scope": "repo", "release": "major" },
+          { "type": "feat", "scope": "repo", "release": "minor" },
+          { "type": "fix", "scope": "repo", "release": "patch" },
           { "scope": "!repo", "release": false },
           { "type": ["chore", "refactor", "test", "wip"], "release": false }
-        ]
+        ],
+        "parserOpts": {
+          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+        }
       }
     ],
     "@semantic-release/release-notes-generator",
