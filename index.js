@@ -1,4 +1,4 @@
-const micromatch = require("micromatch 2");
+const micromatch = require("micromatch 3");
 console.log("main project");
 
 console.log(
