@@ -9,6 +9,7 @@
           { "breaking": true, "scope": "repo", "release": "major" },
           { "type": "feat", "scope": "repo", "release": "minor" },
           { "type": "fix", "scope": "repo", "release": "patch" },
+          { "scope": "", "release": false },
           { "scope": "!repo", "release": false },
           { "type": ["chore", "refactor", "test", "wip"], "release": false }
         ],
