@@ -1,5 +1,5 @@
 const micromatch = require("micromatch");
-console.log("main project");
+console.log("main project -1");
 
 console.log(
   micromatch(
