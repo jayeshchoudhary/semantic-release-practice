@@ -29,7 +29,7 @@
     [
       "@semantic-release/git",
       {
-        "assets": ["CHANGELOG.md"]
+        "message": "chore(${package_name}): release ${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ]
   ]
