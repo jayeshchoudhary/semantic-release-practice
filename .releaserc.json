@@ -29,7 +29,7 @@
     [
       "@semantic-release/git",
       {
-        "message": "chore(${package_name}): release ${nextRelease.version}\n\n${nextRelease.notes}"
+        "message": "chore(repo): release ${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ]
   ]
