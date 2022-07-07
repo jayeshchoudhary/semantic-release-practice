@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/jayeshchoudhary/semantic-release-practice/compare/v2.0.0...v2.1.0) (2022-07-07)
+
+
+### Features
+
+* **repo:** change commit message ([1faf09f](https://github.com/jayeshchoudhary/semantic-release-practice/commit/1faf09f63c69479af702676a8612616dfc80907a))
+
 # [2.0.0](https://github.com/jayeshchoudhary/semantic-release-practice/compare/v1.3.0...v2.0.0) (2022-07-06)
 
 
