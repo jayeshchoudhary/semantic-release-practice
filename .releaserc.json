@@ -40,7 +40,7 @@
     [
       "@semantic-release/git",
       {
-        "message": "Release Notes - ${nextRelease.gitTag} [skip ci]\n\n${nextRelease.notes}"
+        "message": "Release Notes - <%= nextRelease.gitTag %> [skip ci]\n\n<%= nextRelease.notes %>"
       }
     ]
   ],
