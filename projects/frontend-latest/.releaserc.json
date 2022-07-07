@@ -1,9 +1,38 @@
 {
   "branches": "main",
   "plugins": [
-    "@semantic-release/commit-analyzer",
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "releaseRules": [
+          { "type": "major", "scope": "frontend-latest", "release": "major" },
+          { "breaking": true, "scope": "frontend-latest", "release": "major" },
+          { "type": "feat", "scope": "frontend-latest", "release": "minor" },
+          { "type": "fix", "scope": "frontend-latest", "release": "patch" },
+          { "scope": "!frontend-latest", "release": false },
+          { "type": ["chore", "refactor", "test", "wip"], "release": false }
+        ],
+        "parserOpts": {
+          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+        }
+      }
+    ],
     "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md",
+        "changelogTitle": "Release Notes"
+      }
+    ],
     "@semantic-release/npm",
-    "@semantic-release/github"
-  ]
+    "@semantic-release/github",
+    [
+      "@semantic-release/git",
+      {
+        "message": "Release Notes - ${nextRelease.gitTag} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
+  ],
+  "tagFormat": "frontend-latest-${version}"
 }
