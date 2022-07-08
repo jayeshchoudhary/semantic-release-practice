@@ -1,5 +1,17 @@
 Release Notes
 
+# [2.0.0](https://github.com/jayeshchoudhary/semantic-release-practice/compare/repo-1.0.0...repo-2.0.0) (2022-07-08)
+
+
+### Features
+
+* **repo:** breaking changes ([69da37a](https://github.com/jayeshchoudhary/semantic-release-practice/commit/69da37a85a4ce28ef7e77147f621364576bfe158))
+
+
+### BREAKING CHANGES
+
+* **repo:** use JavaScript features not available in Node 6.
+
 # 1.0.0 (2022-07-07)
 
 
