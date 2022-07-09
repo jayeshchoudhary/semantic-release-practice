@@ -4,6 +4,7 @@
     [
       "@semantic-release/commit-analyzer",
       {
+        "preset": "conventionalcommits",
         "releaseRules": [
           { "type": "major", "scope": "repo", "release": "major" },
           { "breaking": true, "scope": "repo", "release": "major" },
@@ -11,10 +12,7 @@
           { "type": "fix", "scope": "repo", "release": "patch" },
           { "scope": "!repo", "release": false },
           { "type": ["chore", "refactor", "test", "wip"], "release": false }
-        ],
-        "parserOpts": {
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
-        }
+        ]
       }
     ],
     "@semantic-release/release-notes-generator",
