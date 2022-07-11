@@ -16,7 +16,10 @@
       }
     ],
     "@semantic-release/npm",
-    ["@semantic-release/github", { "addReleases": true, "failComment": false }]
+    [
+      "@semantic-release/github",
+      { "addReleases": true, "failComment": false, "successComment": false }
+    ]
   ],
   "tagFormat": "repo-${version}"
 }
