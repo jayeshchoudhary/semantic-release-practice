@@ -15,7 +15,24 @@
         ]
       }
     ],
-    "@semantic-release/npm",
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "conventionalcommits",
+        "presetConfig": {
+          "types": [
+            { "type": "feat", "section": "Features" },
+            { "type": "fix", "section": "Bug Fixes" },
+            { "type": "major", "section": "Major" },
+            { "type": "chore", "hidden": true },
+            { "type": "refactor", "hidden": true },
+            { "type": "test", "hidden": true },
+            { "type": "wip", "hidden": true }
+          ]
+        }
+      }
+    ],
+    ["@semantic-release/npm", { "npmPublish": false }],
     [
       "@semantic-release/github",
       { "addReleases": true, "failComment": false, "successComment": false }
