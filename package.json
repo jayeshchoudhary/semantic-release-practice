@@ -21,6 +21,7 @@
     "semantic-release": "^19.0.3"
   },
   "dependencies": {
+    "conventional-commits-parser": "^3.2.4",
     "micromatch": "^4.0.5"
   }
 }
