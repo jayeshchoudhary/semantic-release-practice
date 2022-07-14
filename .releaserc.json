@@ -40,7 +40,8 @@
     [
       "@semantic-release/exec",
       {
-        "successCmd": "success.sh ${nextRelease}"
+        "successCmd": "success.sh ${nextRelease}",
+        "verifyConditions": "node ./success.js ${lastRelease}"
       }
     ]
   ],
