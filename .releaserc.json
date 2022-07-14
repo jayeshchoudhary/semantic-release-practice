@@ -40,7 +40,7 @@
     [
       "@semantic-release/exec",
       {
-        "successCmd": "node ./success.js ${nextRelease}"
+        "successCmd": "node ./success.js ${nextRelease.url}"
       }
     ]
   ],
