@@ -40,7 +40,7 @@
     [
       "@semantic-release/exec",
       {
-        "successCmd": "echo ${nextRelease.url}"
+        "successCmd": "echo ${nextRelease.version} ${nextRelease.url} ${releases[0].url} ${releases[1].url}"
       }
     ]
   ],
