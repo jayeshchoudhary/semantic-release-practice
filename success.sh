@@ -1,0 +1,1 @@
+echo "Next Relese : $1"
