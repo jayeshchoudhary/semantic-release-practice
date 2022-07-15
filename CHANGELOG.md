@@ -1,3 +1,10 @@
+## [5.1.0](https://github.com/jayeshchoudhary/semantic-release-practice/compare/repo-5.0.0...repo-5.1.0) (2022-07-15)
+
+
+### Features
+
+* **repo:** add test.json ([70f87b8](https://github.com/jayeshchoudhary/semantic-release-practice/commit/70f87b8a183587cf8a37536002650166d745f928))
+
 ## [5.0.0](https://github.com/jayeshchoudhary/semantic-release-practice/compare/repo-4.6.0...repo-5.0.0) (2022-07-15)
 
 
