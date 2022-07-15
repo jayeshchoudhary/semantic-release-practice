@@ -1,0 +1,13 @@
+{
+  "type": "fix",
+  "scope": "title",
+  "subject": "STUI-31 a title is fixed",
+  "merge": null,
+  "header": "fix(title): STUI-31 a title is fixed",
+  "body": null,
+  "footer": null,
+  "notes": [],
+  "references": [],
+  "mentions": [],
+  "revert": null
+}
