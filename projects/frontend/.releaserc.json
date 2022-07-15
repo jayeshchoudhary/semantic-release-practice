@@ -4,6 +4,7 @@
     [
       "@semantic-release/commit-analyzer",
       {
+        "preset": "conventionalcommits",
         "releaseRules": [
           { "type": "major", "scope": "frontend", "release": "major" },
           { "breaking": true, "scope": "frontend", "release": "major" },
@@ -11,36 +12,36 @@
           { "type": "fix", "scope": "frontend", "release": "patch" },
           { "scope": "!frontend", "release": false },
           { "type": ["chore", "refactor", "test", "wip"], "release": false }
-        ],
-        "parserOpts": {
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+        ]
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "conventionalcommits",
+        "presetConfig": {
+          "types": [
+            { "type": "feat", "section": "Features" },
+            { "type": "fix", "section": "Bug Fixes" },
+            { "type": "major", "section": "Major" },
+            { "type": "chore", "hidden": true },
+            { "type": "refactor", "hidden": true },
+            { "type": "test", "hidden": true },
+            { "type": "wip", "hidden": true }
+          ]
         }
       }
     ],
-    "@semantic-release/release-notes-generator",
-    [
-      "@semantic-release/changelog",
-      {
-        "changelogFile": "CHANGELOG.md",
-        "changelogTitle": "Release Notes"
-      }
-    ],
+    ["@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" }],
     "@semantic-release/npm",
     [
       "@semantic-release/github",
-      {
-        "successComment": false,
-        "failComment": false,
-        "failTitle": false,
-        "releasedLabels": false,
-        "labels": false,
-        "addReleases": "top"
-      }
+      { "addReleases": "top", "failComment": false, "successComment": false }
     ],
     [
-      "@semantic-release/git",
+      "@semantic-release/exec",
       {
-        "message": "Release Notes - <%= nextRelease.gitTag %> [skip ci]\n\n<%= nextRelease.notes %>"
+        "successCmd": "pwd"
       }
     ]
   ],
