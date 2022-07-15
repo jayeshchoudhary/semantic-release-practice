@@ -46,7 +46,10 @@
     ],
     [
       "@semantic-release/git",
-      { "message": "chore(repo): add changelog for ${nextRelease.gitTag}" }
+      {
+        "message": "chore(repo): add changelog for ${nextRelease.gitTag}",
+        "assets": "CHANGELOG.md"
+      }
     ]
   ],
   "tagFormat": "repo-${version}"

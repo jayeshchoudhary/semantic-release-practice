@@ -40,7 +40,10 @@
     ],
     [
       "@semantic-release/git",
-      { "message": "chore(frontend): add changelog for ${nextRelease.gitTag}" }
+      {
+        "message": "chore(frontend): add changelog for ${nextRelease.gitTag}",
+        "assets": "CHANGELOG.md"
+      }
     ],
     [
       "@semantic-release/exec",
