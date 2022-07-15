@@ -39,6 +39,10 @@
       { "addReleases": "top", "failComment": false, "successComment": false }
     ],
     [
+      "@semantic-release/git",
+      { "message": "chore(frontend): add changelog for ${nextRelease.gitTag}" }
+    ],
+    [
       "@semantic-release/exec",
       {
         "successCmd": "pwd"
