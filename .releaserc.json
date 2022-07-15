@@ -43,6 +43,10 @@
       {
         "successCmd": "pwd"
       }
+    ],
+    [
+      "@semantic-release/git",
+      { "message": "chore(repo): add changelog for ${nextRelease.gitTag}" }
     ]
   ],
   "tagFormat": "repo-${version}"
