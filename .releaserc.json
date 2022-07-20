@@ -29,7 +29,8 @@
             { "type": "test", "hidden": true },
             { "type": "wip", "hidden": true }
           ]
-        }
+        },
+        "parserOpts": { "headerCorrespondence": ["type", "", "subject"] }
       }
     ],
     ["@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" }],
