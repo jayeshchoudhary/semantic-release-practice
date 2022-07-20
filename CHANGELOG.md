@@ -1,3 +1,13 @@
+# [5.2.0](https://github.com/jayeshchoudhary/semantic-release-practice/compare/repo-5.1.0...repo-5.2.0) (2022-07-20)
+
+
+### Features
+
+* **frontend-latest:** add angular preset-frontend-latest ([82685c8](https://github.com/jayeshchoudhary/semantic-release-practice/commit/82685c855eb7077f885e364fd8cbf1d963bc32f7))
+* **frontend:** add angular preset-frontend ([3b0a679](https://github.com/jayeshchoudhary/semantic-release-practice/commit/3b0a6791ad4050da753bcf449651a733fa1557ae))
+* **repo:** add angular preset ([413d168](https://github.com/jayeshchoudhary/semantic-release-practice/commit/413d168ed7d668f2bda509e0a840e4b370eabd5f))
+* **repo:** add test.json ([7fc38b3](https://github.com/jayeshchoudhary/semantic-release-practice/commit/7fc38b3ac690f88a2ff02a05fcffd5fc6eaff551))
+
 ## [5.1.0](https://github.com/jayeshchoudhary/semantic-release-practice/compare/repo-5.0.0...repo-5.1.0) (2022-07-15)
 
 
