@@ -1,6 +1,6 @@
 const micromatch = require("micromatch");
 const config = require("./config");
-console.log("main project major 3");
+console.log("main project major 4");
 const fs = require("fs");
 const temp = require("conventional-changelog-writer");
 
