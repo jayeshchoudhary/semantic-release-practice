@@ -35,30 +35,6 @@
     ],
     "@semantic-release/npm",
     [
-      "@semantic-release/github",
-      { "addReleases": "top", "failComment": false, "successComment": false }
-    ],
-    [
-      "@semantic-release/exec",
-      {
-        "successCmd": "pwd"
-      }
-    ],
-    [
-      "semantic-release-slack-bot",
-      {
-        "slackWebhook": "https://hooks.slack.com/services/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",
-        "notifyOnSuccess": true,
-        "notifyOnFail": false,
-        "onSuccessTemplate": {
-          "channel": "#general",
-          "username": "remote-managed-ui",
-          "icon_emoji": ":white_circle:",
-          "text": "Github: $repo_url/releases/tag/${nextRelease.gitTag}"
-        }
-      }
-    ],
-    [
       "semantic-release-github-pullrequest",
       {
         "assets": ["CHANGELOG.md"],
