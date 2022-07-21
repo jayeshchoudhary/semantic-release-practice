@@ -38,7 +38,9 @@
       "semantic-release-github-pullrequest",
       {
         "assets": ["CHANGELOG.md"],
-        "baseRef": "main"
+        "baseRef": "main",
+        "pullrequestTitle": "chore(repo): add changelog for ${nextRelease.gitTag} release",
+        "branch": "changelog-update-${nextRelease.gitTag}"
       }
     ],
     "@semantic-release/npm"
