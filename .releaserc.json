@@ -55,7 +55,7 @@
     [
       "semantic-release-slack-bot",
       {
-        "slackWebhook": "https://hooks.slack.com/services/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",
+        "slackWebhook": "https://hooks.slack.com/services/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",
         "notifyOnSuccess": true,
         "notifyOnFail": false,
         "onSuccessTemplate": {
