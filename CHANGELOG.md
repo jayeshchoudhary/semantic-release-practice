@@ -1,3 +1,10 @@
+## [7.1.1](https://github.com/jayeshchoudhary/semantic-release-practice/compare/repo-7.1.0...repo-7.1.1) (2022-07-21)
+
+
+### Bug Fixes
+
+* blank changelog ([286c8f0](https://github.com/jayeshchoudhary/semantic-release-practice/commit/286c8f04f4c28f1a6dc06de59e532f74e9f57bfe))
+
 # [7.0.0](https://github.com/jayeshchoudhary/semantic-release-practice/compare/repo-6.0.0...repo-7.0.0) (2022-07-21)
 
 
