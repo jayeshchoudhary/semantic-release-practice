@@ -33,14 +33,15 @@
         "parserOpts": { "headerCorrespondence": ["type", "", "subject"] }
       }
     ],
-    "@semantic-release/npm",
+    ["@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" }],
     [
       "semantic-release-github-pullrequest",
       {
         "assets": ["CHANGELOG.md"],
         "baseRef": "main"
       }
-    ]
+    ],
+    "@semantic-release/npm"
   ],
   "tagFormat": "repo-${version}"
 }
