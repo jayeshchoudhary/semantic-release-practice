@@ -1,3 +1,11 @@
+# [7.0.0](https://github.com/jayeshchoudhary/semantic-release-practice/compare/repo-6.0.0...repo-7.0.0) (2022-07-21)
+
+
+### Features
+
+* add slack support ([284c344](https://github.com/jayeshchoudhary/semantic-release-practice/commit/284c3443345da7fcbb2b956468a81e371df69bfa))
+* add slack support ([56e64d3](https://github.com/jayeshchoudhary/semantic-release-practice/commit/56e64d34dcc20aea711391866a58f3019d70ce01))
+
 # [6.0.0](https://github.com/jayeshchoudhary/semantic-release-practice/compare/repo-5.1.0...repo-6.0.0) (2022-07-20)
 
 
