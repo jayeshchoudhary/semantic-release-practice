@@ -55,14 +55,14 @@
     [
       "semantic-release-slack-bot",
       {
-        "slackWebhook": "https://hooks.slack.com/services/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",
+        "slackWebhook": "https://hooks.slack.com/services/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",
         "notifyOnSuccess": true,
         "notifyOnFail": false,
         "onSuccessTemplate": {
-          "channel": "#test",
+          "channel": "#general",
           "username": "remote-managed-ui",
           "icon_emoji": ":white_circle:",
-          "text": "Testing publish `$package_name $npm_package_version`\nArtifactory: https://repo.startreedata.io/ui/repos/tree/General/startree-ui/$package_name/-/$package_name-$npm_package_version.tgz\nGithub: $repo_url/releases/tag/${nextRelease.gitTag}\n"
+          "text": "Github: $repo_url/releases/tag/${nextRelease.gitTag}"
         }
       }
     ]
